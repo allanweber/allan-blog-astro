@@ -12,6 +12,7 @@ tags:
   - TypeScript
   - Spring Boot
   - Real Software
+  - Micro-Saas
 description:
   "After many years why I decided to start writing."
 ---
@@ -33,13 +34,18 @@ Even if doesn't help anyone, it is journal of my life, my thoughts, my experienc
 ## What I will write about
 
 I will write about software development, programming languages, frameworks, libraries, tools, methodologies, best practices, blablablabla.
+NO. I won't write about that.
 
 No bullshit, no clickbait, no fake news, no fake promises, no fake anything.
 
 I will write about real shit, real problems, real solutions, real software.
 
-Not all that deviation about perfection and tool/libraries/frameworks that none user in the real world
+Not all that delusion about perfection, 100% code coverage or that tool/libraries/frameworks that none uses in the real world.
 
-I will start a series about a real application step by step and document my journey building a micro saas.
+Things that I am going to do for sure:
+
+* Small posts about a useful library or code snippet.\
+* I will start a a couple of series about real applications step by step and document my journey building a micro-saas.
+* I will build small applications for my day-to-day stuff, maybe some tools, maybe some data scrapping, definitely something related do DAY TRADE and STOCK investment.
 
 See you there....

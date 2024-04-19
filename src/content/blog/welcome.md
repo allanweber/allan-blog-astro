@@ -1,9 +1,9 @@
 ---
 title: I will start writing blog posts
 author: Allan Weber
-pubDatetime: 2024-04-19T18:17:51Z
-slug: i-promise-i-will-start-writing-blog-posts
-featured: false
+pubDatetime: 2024-04-18T18:17:51Z
+slug: welcome
+featured: true
 draft: false
 tags:
   - JavaScript

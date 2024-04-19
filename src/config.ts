@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from "./types";
+import type { Site, SkillsObjects, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://blog.allanweber.dev",
@@ -32,7 +32,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/allanweber/",
+    href: "https://www.instagram.com/allanweber",
     linkTitle: `Follow ${SITE.title} on Instagram`,
     active: true,
   },
@@ -43,15 +43,21 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Mail",
-    href: "mailto:a.cassianoweber@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
-  },
-  {
     name: "Twitter",
     href: "https://twitter.com/acassianoweber",
     linkTitle: `Follow ${SITE.title} on Twitter`,
+    active: true,
+  },
+  {
+    name: "Web",
+    href: "https://allanweber.dev",
+    linkTitle: `Check ${SITE.title} website`,
+    active: true,
+  },
+  {
+    name: "Mail",
+    href: "mailto:a.cassianoweber@gmail.com",
+    linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
   {
@@ -137,5 +143,119 @@ export const SOCIALS: SocialObjects = [
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
+  },
+];
+
+export const SKILLS: SkillsObjects = [
+  {
+    name: "Javascript",
+    linkTitle: "Javascript",
+    active: true,
+  },
+  {
+    name: "Java",
+    linkTitle: "Java",
+    active: true,
+  },
+  {
+    name: "Typescript",
+    linkTitle: "Typescript",
+    active: true,
+  },
+  {
+    name: "Python",
+    linkTitle: "Python",
+    active: true,
+  },
+  {
+    name: "AWS",
+    linkTitle: "AWS",
+    active: true,
+  },
+  {
+    name: "Vercel",
+    linkTitle: "Vercel",
+    active: true,
+  },
+  {
+    name: "NodeJs",
+    linkTitle: "NodeJs",
+    active: true,
+  },
+  {
+    name: "Spring",
+    linkTitle: "Spring",
+    active: true,
+  },
+  {
+    name: "React",
+    linkTitle: "React",
+    active: true,
+  },
+  {
+    name: "NextJs",
+    linkTitle: "NextJs",
+    active: true,
+  },
+  {
+    name: "Kafka",
+    linkTitle: "Kafka",
+    active: true,
+  },
+  {
+    name: "Rabbit",
+    linkTitle: "Rabbit",
+    active: true,
+  },
+  {
+    name: "Mongo",
+    linkTitle: "Mongo",
+    active: true,
+  },
+  {
+    name: "Postgres",
+    linkTitle: "Postgres",
+    active: true,
+  },
+  {
+    name: "MySql",
+    linkTitle: "MySql",
+    active: true,
+  },
+  {
+    name: "Redis",
+    linkTitle: "Redis",
+    active: true,
+  },
+
+  {
+    name: "Docker",
+    linkTitle: "Docker",
+    active: true,
+  },
+  {
+    name: "Kubernetes",
+    linkTitle: "Kubernetes",
+    active: true,
+  },
+  {
+    name: "Maven",
+    linkTitle: "Maven",
+    active: true,
+  },
+  {
+    name: "WebPack",
+    linkTitle: "WebPack",
+    active: true,
+  },
+  {
+    name: "GithubActins",
+    linkTitle: "GithubActins",
+    active: true,
+  },
+  {
+    name: "Jenkins",
+    linkTitle: "Jenkins",
+    active: true,
   },
 ];

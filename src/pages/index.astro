@@ -1,14 +1,15 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import LinkButton from "@components/LinkButton.astro";
-import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Hr from "@components/Hr.astro";
+import LinkButton from "@components/LinkButton.astro";
+import Skills from "@components/Skills.astro";
 import Socials from "@components/Socials.astro";
-import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import Layout from "@layouts/Layout.astro";
+import getSortedPosts from "@utils/getSortedPosts";
+import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
 
@@ -23,7 +24,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>Hi, I'm Allan!</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -42,19 +43,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        A creative, fullstack developer who possesses strong technical knowledge
+        and delivers solid, reliable and scalable software.
       </p>
       <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
+        I am a very adapt developer with over 15 years of experience with
+        backend, frontend, architecture and devops applications.
+      </p>
+      <p>
+        As a Senior Developer, I have helped several companies to improve their
+        development process and create software with high value and quality.
       </p>
       {
         // only display if at least one social link is enabled
@@ -62,6 +60,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           <div class="social-wrapper">
             <div class="social-links">Social Links:</div>
             <Socials />
+          </div>
+        )
+      }
+      {
+        (
+          // only display if at least one social link is enabled
+          <div class="social-wrapper">
+            <div class="social-links">My Skills:</div>
+            <Skills />
           </div>
         )
       }
@@ -122,42 +129,42 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   </main>
 
   <Footer />
+
+  <style>
+    /* ===== Hero Section ===== */
+    #hero {
+      @apply pb-6 pt-8;
+    }
+    #hero h1 {
+      @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    }
+    #hero .rss-link {
+      @apply mb-6;
+    }
+    #hero .rss-icon {
+      @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+    }
+    #hero p {
+      @apply my-2;
+    }
+    .social-wrapper {
+      @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    }
+    .social-links {
+      @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    }
+
+    /* ===== Featured & Recent Posts Sections ===== */
+    #featured,
+    #recent-posts {
+      @apply pb-6 pt-12;
+    }
+    #featured h2,
+    #recent-posts h2 {
+      @apply text-2xl font-semibold tracking-wide;
+    }
+    .all-posts-btn-wrapper {
+      @apply my-8 text-center;
+    }
+  </style>
 </Layout>
-
-<style>
-  /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-  }
-  #hero .rss-link {
-    @apply mb-6;
-  }
-  #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
-  }
-  .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
-  }
-  .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
-  }
-
-  /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
-  #recent-posts {
-    @apply pb-6 pt-12;
-  }
-  #featured h2,
-  #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
-  .all-posts-btn-wrapper {
-    @apply my-8 text-center;
-  }
-</style>

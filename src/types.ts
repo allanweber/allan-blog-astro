@@ -1,3 +1,4 @@
+import type skillsIcons from "@assets/skillsIcons";
 import type socialIcons from "@assets/socialIcons";
 
 export type Site = {
@@ -14,6 +15,13 @@ export type Site = {
 export type SocialObjects = {
   name: keyof typeof socialIcons;
   href: string;
+  active: boolean;
+  linkTitle: string;
+}[];
+
+export type SkillsObjects = {
+  name: keyof typeof skillsIcons;
+  href?: string;
   active: boolean;
   linkTitle: string;
 }[];

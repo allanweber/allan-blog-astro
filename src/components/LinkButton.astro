@@ -5,9 +5,17 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
+  newPage?: boolean;
 }
 
-const { href, className, ariaLabel, title, disabled = false } = Astro.props;
+const {
+  href,
+  className,
+  ariaLabel,
+  title,
+  disabled = false,
+  newPage = false,
+} = Astro.props;
 ---
 
 {
@@ -24,9 +32,9 @@ const { href, className, ariaLabel, title, disabled = false } = Astro.props;
     <a
       {href}
       class={`group inline-block hover:text-skin-accent ${className}`}
-      target="_blank"
       aria-label={ariaLabel}
       title={title}
+      target={newPage ? "_blank" : undefined}
     >
       <slot />
     </a>

@@ -44,7 +44,7 @@ Not all that delusion about perfection, 100% code coverage or that tool/librarie
 
 Things that I am going to do for sure:
 
-* Small posts about a useful library or code snippet.\
+* Small posts about a useful library or code snippet.
 * I will start a a couple of series about real applications step by step and document my journey building a micro-saas.
 * I will build small applications for my day-to-day stuff, maybe some tools, maybe some data scrapping, definitely something related do DAY TRADE and STOCK investment.
 

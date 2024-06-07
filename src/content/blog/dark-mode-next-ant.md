@@ -31,19 +31,19 @@ AntDesign is a great UI library that provides a lot of components that can be us
 
 To implement dark mode in NextJs with AntDesign, you need to follow these steps:
 
-### Create a new NextJs project
+## Create a new NextJs project
 
 ```bash
 npx create-next-app my-app
 ```
 
-### Install AntDesign
+## Install AntDesign
 
 ```bash
 npm install antd
 ```
 
-### Create a new context
+## Create a new context
 
 Create a new file called `ThemeModeContext.tsx` in the `./src/app/providers` folder and add the following code:
 The context will have a mode and a setMode function that will be used to change the theme mode.
@@ -64,7 +64,7 @@ const ThemeModeContext = createContext({
 export { ThemeMode, ThemeModeContext };
 ```
 
-### Define the background color for the dark mode
+## Define the background color for the dark mode
 
 In the file called `globals.css` in the `./src/app` folder and add the following code:
 
@@ -79,7 +79,7 @@ body.dark {
 }
 ```
 
-### Create a new provider
+## Create a new provider
 
 Create a new file called `AntdConfigProvider.tsx` in the `./src/app/providers` folder and add the following code:
 The provider is responsible for setting the theme mode and updating the theme based on the mode previously set, it also saves the mode in the local storage.
@@ -135,7 +135,7 @@ type Props = {
 export default AntdConfigProvider;
 ```
 
-### Add the provider to your Layout component
+## Add the provider to your Layout component
 
 In the file `./src/app/layouts/Layout.tsx`, add the following code:
 The layout will wrap the whole application providing the theme context to all the components.
@@ -159,7 +159,7 @@ const RootLayout = ({ children }: React.PropsWithChildren) => (
 export default RootLayout;
 ```
 
-### Add the dark mode switch
+## Add the dark mode switch
 
 In the file `./src/app/components/ModeSwitch.tsx`, add the following code:
 
@@ -194,7 +194,7 @@ export const ModeSwitch = () => {
 };
 ```
 
-### Add some components to test the dark mode
+## Add some components to test the dark mode
 
 In the file `./src/page.tsx`, add the following code:
 
@@ -229,10 +229,10 @@ const Home = () => {
 export default Home;
 ```
 
-### Final Result
+## Final Result
 
 ![Final Result](@assets/images/dark-mode-nextjs-ant-design-demo.gif)
 
-### Source Code
+## Source Code
 
 [Source Code Available in Gist](https://gist.github.com/allanweber/76340eb3dbafe23fe59f1e884d1c6ed1)

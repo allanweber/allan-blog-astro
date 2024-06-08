@@ -7,18 +7,19 @@ featured: true
 draft: false
 tags:
     - Javascript
+    - react
     - Typescript
     - NextJs
     - Internationalization
     - next-intl
+    - micro-saas
+    - real-software
 description: A quick way to add multi languages and internationalization to your NextJs project with next-intl
 ---
 
+> We are starting a series of articles about managing trades called Trading Journal. The series will cover the creation of a trading journal, where the user can manage their trades, from many different markets. The first article is about internationalization, where we will create a NextJs project with multi languages support.
+
 ## Table of contents
-
-## Introduction
-
-We are starting a series of articles about managing trades. The series will cover the creation of a trading journal, where the user can manage their trades, from many different markets. The first article is about internationalization, where we will create a NextJs project with multi languages support.
 
 ## New NextJs Project
 
@@ -263,4 +264,4 @@ At the end you should have something like this:
 
 ## Source Code Available
 
-[Source Code Available in GitHub](https://github.com/allanweber/trading-journal-nextjs/tree/1-internationalization)
+[Link to 1-internationalization branch](https://github.com/allanweber/trading-journal-nextjs/tree/1-internationalization)

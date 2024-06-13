@@ -41,7 +41,7 @@ npm install next-intl
 
 This is going to be the structure of our project, a couple of configuration files and a folder for the translations, and some pages to test the internationalization.
 
-![Project Structure](@assets/images/nextJs-internationalized-project-project-structure.png)
+![Project Structure](@assets/images/manage-trades-series-1/nextJs-internationalized-project-project-structure.png)
 
 Make sure about the files/folders marked in red, they are the most important for the internationalization to work.
 
@@ -260,7 +260,7 @@ export default function Page() {
 
 At the end you should have something like this:
 
-![Final result](@assets/images/nextJs-internationalized-project-project-structure.gif)
+![Final result](@assets/images/manage-trades-series-1/nextJs-internationalized-project-project-structure.gif)
 
 ## Source Code Available
 

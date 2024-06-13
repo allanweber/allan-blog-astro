@@ -370,7 +370,7 @@ export default function LocaleSelect() {
 
 At the end you should have something like this:
 
-![Final result](@assets/images/manage-trades-series-2-shadcn-and-dark-mode.gif)
+![Final result](@assets/images/manage-trades-series-2/manage-trades-series-2-shadcn-and-dark-mode.gif)
 
 ## Source Code Available
 

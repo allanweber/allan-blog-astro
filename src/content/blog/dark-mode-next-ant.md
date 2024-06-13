@@ -231,7 +231,7 @@ export default Home;
 
 ## Final Result
 
-![Final Result](@assets/images/dark-mode-nextjs-ant-design-demo.gif)
+![Final Result](@assets/images/ant-dark-mode/dark-mode-nextjs-ant-design-demo.gif)
 
 ## Source Code
 

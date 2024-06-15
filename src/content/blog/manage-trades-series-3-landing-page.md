@@ -40,15 +40,42 @@ For this article, you will need to install some Shadcn components. You can insta
 npx shadcn-ui@latest add navigation-menu sheet avatar badge card input accordion
 ```
 
-## Files and Folders changes
-
-This is the list of files and folders that we will create or modify in this article, main attention to the `pages/index.tsx` file.
-
-![Files and Folder Changes](@assets/images/manage-trades-series-3/manage-trades-series-3-landing-page-changes.png)
-
-## Result
+## Main changes
 
 As the landing page creation process is quite simple but requires a lot of code, I will not show the code here. You can check the code on the [3-landing-page branch](https://github.com/allanweber/trading-journal-nextjs/tree/3-landing-page)
+
+* We moved the ~/messages folder to ~/src/messages.
+* The whole landing page will be in ~/src/app/[locale]/site/page.tsx file.
+* Components will be in ~/src/app/[locale]/site/components folder.
+* Assets will be in ~/src/app/[locale]/site/assets folder.
+
+One important change is two different categories of translations file:
+
+* The files called {locale}.json will be used for rendering server side components.
+* The files called {locale}.client.json will be used for rendering client side components.
+
+In this only the necessary translations will be loaded on the client side.
+
+![Messages files](@assets/images/manage-trades-series-3/messages-files-structure.png)
+
+To support this change, we need to change the way we load the translations in the ~/src/app/[locale]/layout.tsx file to only load client side translations when the page is rendered on the client side.
+
+```tsx
+...
+import { notFound } from 'next/navigation';
+...
+let messages;
+try {
+messages = (await import(`@/messages/${locale}-client.json`)).default;
+} catch (error) {
+notFound();
+}
+...
+```
+
+![Messages files](@assets/images/manage-trades-series-3/layout-messages-change.png)
+
+## Result
 
 At the end you should have something like this:
 
